@@ -1,0 +1,79 @@
+/* Write your own styles here. */
+body {
+    background-color: lightcoral;
+    color:black; 
+    border-left: 50px solid lightcoral;
+    border-right: 50px solid lightcoral;
+}
+.dark-mode {
+    background: #1A0E0E;
+    color:#48483E;
+    border-left: 50px solid #1A0E0E;
+    border-right: 50px solid #1A0E0E;
+/* I took the darker of light coral, using htmlcsscolor.com and then i fumbled around and found heavy metal, so I used that for text.*/
+}
+/*h1 {
+   /* order: -1;
+    margin-bottom: 10px;
+    color: #7064D1; 
+    /* this should work on light and dark modes but to be tested */
+   /* justify-content: center;
+    text-decoration: underline;
+    font-size: 50px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+*/
+.bold {
+    font-weight: bold;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header.site-header h1{
+    order: -1;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-size: 50px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px white;
+}
+
+#intro,
+#about,
+#projects,
+#skills,
+#resume {
+    padding: 20px 15px;
+}
+
+.seperator{
+    border:none;
+    height: 2px;
+    background-color: rgba(60, 179, 199,0.8)
+}
+
+/*#mode {
+    color: yellow;
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 5px 5px;
+    border-radius: 6px;
+    margin: 3px;
+}
+    Supposed to be left and right borders but TBD.
+*/

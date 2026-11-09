@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uriel Dolgin: Portfolio</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1> Uriel Dolgin: Portfolio <img src="images/NEIUeagle.jpg"alt="NEIU eagle" width="50" height="50"></h1>
+    <nav>
+    <a href="#intro">Jump to Introduction</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">My Projects</a>
+    <a href="#skills">My Skills</a>
+    <a href="#resume">My Resume</a>
+    </nav>
+    <!--Unsure whether i should add a nav for Contact or not. They havent looked yet so that feels unnecessary, but then if they scroll back up to nav they might want it.-->
+<!-- make sure to update and add nav # to each section -->
+    <!-- Header and navigation: your name or logo, and links to your main sections. -->
+  </header>
+  <main>
+    <section id="intro">
+    <p> <button onclick="changeText(this)">Light Mode</button> </p>
+      <p> &nbsp; Hello there! <br> I am <span class="bold">Uriel Dolgin</span> and I am a student at <span class="bold">Northeastern Illinois University</span> <span class="clickable text">studying computer science!</span></p>
+      <p> &nbsp; Hopefully something here is of interest and you enjoy your stay! </p>
+      <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
+    </section>
+     <hr class="seperator">
+
+    <section id="about">
+      <p> &nbsp; Like many others, I enjoy video games such as <span class="minecraft">minecraft</span>,<span class="wow"> World of Warcraft</span>, and <span class="pokemon">Pokemon!</span>
+        Outside of gaming, as a Student I have many academic goals. My main goal is to become extremely competent. Currently, I am still just a student and have much to learn, however
+        playing games really show what <span class="clickable text">developers</span> can really do. Whether its minecraft which in large part succeeded due to the <span class="clickable text">developers</span> of mods and additions to the game which added
+        complexity and creativity. Being someone who can contribute to the world in a way such as developing whether its being able to help shape a companies online prescence or create tools which 
+        help users accomplish complex tasks is something I plan on becoming great at. </p>
+      <!-- About: your interests, studies, and goals. No home address, phone number, or student ID. -->
+    </section>
+     <hr class="seperator">
+
+
+
+    <section id="projects">
+      <p> Many of my projects, I no longer have access to, so instead I will reference different things from this to use as examples.</p>
+      <p>Here is the css to my dark mode/light mode switch. <br> <img src="images/darkmodecss.png"alt="the css relating to dark mode and light mode" width="1250" height="550">  </p>
+      <p> The css in this instance, outlines what each mode looks like. So in light mode, its lightcoral and darkmode its the hexcode for a much darker almost black color</p>
+      <p> And Here is the Javascript for the button, <br> <img src="images/js.png"alt="the javascript of the same" width="1250" height="550"></p>
+      <p> This button does double duty, in changing the text and then setting dark or light mode. While I dont use many comments, here are some examples of me explaining
+        the purpose and such of the color or whats happening to cause this to work as it does. So here, if you want to understand the logic behind the light/dark mode swap you can look 
+        at the w3schools for their javascript relating to lightmode darkmode. 
+      </p>
+    </section>
+    <hr class="seperator">
+
+
+
+    <section id="skills">
+      <p> &nbsp; Hey there, my skills are many and varied. They include but are not limited to:<br>
+        <span class="skills"> Communication with Fellow employees</span>, <br>
+        <span class="skills">Skill2</span>, <br>
+        <span class="skills">Skill3</span>
+      </p>
+      <!-- Skills: the skills your work samples show, each connected to a sample. -->
+    </section>
+    <section id="contact"> 
+      <p>&nbsp; If you would like to contact me, you can do so through the following methods: <br>
+        <a class="contact" href="mailto:uriel.dolgin@gmail.com">My Email</a> <br>
+        <a class="contact" href="https://github.com/ghostflame2153" target="_blank">My Github</a> <br>
+        <a class="contact">My Phone number</a> <br>
+      </p>
+      <!-- Contact: a professional way to reach you, such as a profile link. -->
+    </section>
+     <hr class="seperator">
+
+
+
+    <section id="resume">
+      <p>My resume is a WIP. <a href=" https://docs.google.com/document/d/1HRyX2I3Npv7JFHVDD5rGFDdb4rKY32hjptlK54Q6o1s/edit?usp=sharing"> Here is a link.</a>
+      </p>
+      <!-- Resume: a resume section or a link to a downloadable resume PDF. -->
+    </section>
+     <!--<hr class="seperator"> just incase i want to use it later to add more sections-->
+
+  </main>
+  <footer>
+    <p>Uriel Dolgin, 2026. https://github.com/ghostflame2153 </p>
+    <!-- Footer: your name, the year, and your profile links. -->
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
