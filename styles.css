@@ -1,4 +1,12 @@
 /* Write your own styles here. */
+:root {
+        --a-text-shadow:
+        -1px -1px 0 #000,
+            -1px -1px 0 #000, 
+            -1px -1px 0 #000, 
+            -1px -1px 0 #000;
+    }
+
 body {
     background-color: lightcoral;
     color:black; 
@@ -10,22 +18,17 @@ body {
     color:#92924f;
     border-left: 50px solid #1A0E0E;
     border-right: 50px solid #1A0E0E;
-/* I took the darker of light coral, using htmlcsscolor.com and then i fumbled around and found heavy metal, so I used that for text.*/
+    --a-text-shadow:
+        -1px -1px #f8baee,
+        -1px -1px #f8baee,
+        -1px -1px #f8baee,
+        -1px -1px #f8baee;
 }
-/*h1 {
-   /* order: -1;
-    margin-bottom: 10px;
-    color: #7064D1; 
-    /* this should work on light and dark modes but to be tested */
-   /* justify-content: center;
-    text-decoration: underline;
-    font-size: 50px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-*/
 .bold {
     font-weight: bold;
 }
@@ -35,8 +38,16 @@ header {
     justify-content: center;
     align-items: center;
 }
-header.site-header h1{
-    order: -1;
+nav ul {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
+
+header h1 {
     margin-bottom: 10px;
     text-decoration: underline;
     font-size: 50px;
@@ -44,10 +55,76 @@ header.site-header h1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    img{
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
+    }
 }
-header.nav<
+nav.main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    li {
 
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:larger;
+        a{
+            text-decoration:none;
+            color:inherit;
+            transition: color 0.3s ease;
 
+        }
+        a:hover {
+            color:rgb(218, 25, 57);
+            text-shadow: var(--a-text-shadow);
+           /* background:1vh;
+            background-color:rgba(29, 77, 233, 0.623); 
+            I dont think it needs this, but also the shadow doesnt stand out much in dark so its here as backup*/
+        }
+    }
+}
+@media (min-width:375px) and (max-width:767px){
+
+nav.main ul{
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    li{
+        display:flex;
+        justify-content: center;
+    }
+    li:nth-child(5){
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+}
+@media (min-width:1200px){
+    
+    nav.main ul {
+        
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    li {
+
+        padding-right: 5vh;
+        font-size:larger;
+        a{
+            text-decoration:none;
+            color:inherit;
+            transition: color 0.3s ease;
+
+        }
+    }
+}
+
+}
 
 main {
     padding: 25px;
@@ -69,14 +146,3 @@ main {
     height: 2px;
     background-color: rgba(60, 179, 199,0.8)
 }
-
-/*#mode {
-    color: yellow;
-    display: inline-block;
-    border: 2px solid gray;
-    padding: 5px 5px;
-    border-radius: 6px;
-    margin: 3px;
-}
-    Supposed to be left and right borders but TBD.
-*/
