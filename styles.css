@@ -12,6 +12,7 @@ body {
     color:black; 
     border-left: 50px solid lightcoral;
     border-right: 50px solid lightcoral;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 .dark-mode {
     background: #1A0E0E;
@@ -24,6 +25,7 @@ body {
         -1px -1px #f8baee,
         -1px -1px #f8baee;
 }
+
 .anta-regular {
   font-family: "Anta", sans-serif;
   font-weight: 400;
