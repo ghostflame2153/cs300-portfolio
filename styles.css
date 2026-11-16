@@ -143,6 +143,20 @@ nav.main ul{
         height:auto;
         display:block;
     }
+    .responsive{
+        margin-left:15vw;
+        margin-right:15vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .responsive img{
+        max-height: 60vh;
+        width: 20vw;
+        object-fit: fill;
+    }
+    
+
 }
 
 main {
