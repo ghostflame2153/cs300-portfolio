@@ -101,6 +101,12 @@ h2{
     font-size:x-large;
     text-shadow: var(--a-text-shadow);
 }
+#resume {
+    text-align: center;
+}
+footer {
+    text-align:right;
+}
 @media (min-width:375px) and (max-width:767px){
 
 nav.main ul{
@@ -117,6 +123,10 @@ nav.main ul{
         grid-column: 1 / -1;
         justify-self: center;
     }
+}
+#projects img{
+    display: block;
+    margin-bottom: 5vh;
 }
 }
 @media (min-width:768px){
