@@ -111,6 +111,9 @@ If resume is ever expanded into its own category again, then #contact will be re
 footer {
     text-align:right;
 }
+#skills ul li:has(p){
+    list-style-type:none ;
+}
 @media (min-width:375px) and (max-width:767px){
     nav.main ul{
         box-sizing: border-box;
